@@ -1,3 +1,5 @@
+# pylint: disable=C0103
+
 import enum
 from sqlalchemy import Column, Integer, String, ForeignKey, Enum
 from src.infra.config import Base
@@ -6,10 +8,10 @@ from src.infra.config import Base
 class AnimalTypes(enum.Enum):
     """Define Anymals Types"""
 
-    DOG = "dog"
-    CAT = "cat"
-    FISH = "fish"
-    TURTLE = "turtle"
+    dog = "dog"
+    cat = "cat"
+    fish = "fish"
+    turtle = "turtle"
 
 
 class Pets(Base):
